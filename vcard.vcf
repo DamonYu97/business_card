@@ -2,6 +2,7 @@ BEGIN:VCARD
 VERSION:4.0
 FN:Lilin Yu
 N:Yu;Lilin;;;
+NICKNAME:Damon
 GENDER:M
 ORG:The University of Edinburgh;EPCC
 TEL;TYPE=home:+44 07517681046
