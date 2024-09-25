@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilin Yu - Business Card</title>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Body and background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Business card styling */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+            max-width: 100%;
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h1 {
+            margin: 20px 0 10px;
+            font-size: 26px;
+            color: #333;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        /* Social buttons layout and styling */
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-buttons a {
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .social-buttons a i {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        .social-buttons a.wechat {
+            background-color: #7BB32E;
+        }
+
+        .social-buttons a.facebook {
+            background-color: #3b5998;
+        }
+
+        .social-buttons a.instagram {
+            background-color: #C13584;
+        }
+
+        .social-buttons a.email {
+            background-color: #D44638;
+        }
+
+        /* Contact button styling */
+        .contact-btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        /* Button hover effects */
+        .social-buttons a:hover, .contact-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <!-- Profile Image -->
+    <img src="profile.JPG" alt="Lilin Yu">
+    <!-- Name and Job Title -->
+    <h1>Lilin Yu</h1>
+    <p>PhD student from EPCC, The University of Edinburgh</p>
+
+    <!-- WeChat Button -->
+    <div class="social-buttons">
+        <a href="weixin://dl/chat?Damon-Yu97" class="wechat" target="_blank">
+            <i class="fas fa-comments"></i>Damon-Yu97
+        </a>
+    </div>
+
+    <!-- Facebook Button -->
+    <div class="social-buttons">
+        <a href="https://facebook.com/damonyu97" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>@damonyu97
+        </a>
+    </div>
+
+    <!-- Instagram Button -->
+    <div class="social-buttons">
+        <a href="https://instagram.com/damon_yu_97" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>@damon_yu_97
+        </a>
+    </div>
+
+    <!-- Email Button -->
+    <div class="social-buttons">
+        <a href="mailto:l.yu40@sms.ed.ac.uk" class="email">
+            <i class="fas fa-envelope"></i>l.yu40@sms.ed.ac.uk
+        </a>
+    </div>
+
+    <!-- Contact Button in its own row -->
+    <a href="vcard.vcf" class="contact-btn" download>Add to Contacts</a>
+</div>
+
+</body>
+</html>
